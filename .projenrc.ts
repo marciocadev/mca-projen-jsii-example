@@ -23,7 +23,7 @@ const project = new cdk.JsiiProject({
     mavenGroupId: 'com.marciocadev',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
-  // dont generate new snapshot when run jest
+  // don't generate new snapshot when run jest
   antitamper: false,
   // generate docs
   docgen: true,
