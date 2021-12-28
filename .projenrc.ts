@@ -50,6 +50,10 @@ const project = new cdk.JsiiProject({
   publishToGo: {
     moduleName: 'github.com/marciocadev/mca-projen-jsii-example-go',
   },
+  publishToNuget: {
+    dotNetNamespace: 'Marciocadev.Examples',
+    packageId: 'Projen.Jsii',
+  },
   // don't update snapshot when run jest
   antitamper: false,
   // generate docs
