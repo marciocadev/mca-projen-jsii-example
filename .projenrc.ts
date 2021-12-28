@@ -8,7 +8,13 @@ const project = new cdk.JsiiProject({
   repositoryUrl: "https://github.com/marciocadev/mca-projen-jsii-example.git",
 
   // Major version number
-  majorVersion: 0,
+  /* Everything before 1.0.0 is considered experimental and 
+     breaking changes are only minor version bumps. The moment
+     ou feel comfortable you need to bump the version manually 
+     to 1.0.0 and then the well-known versioning kicks in where 
+     breaking changes bump the major version, features bump the 
+     minor and fixes bump the patch version. */
+  majorVersion: 1,
   // release to NPM
   release: true,
   // release to PyPi
