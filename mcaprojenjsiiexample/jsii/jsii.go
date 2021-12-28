@@ -10,12 +10,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 )
 
-//go:embed mca-projen-jsii-example-0.0.0.tgz
+//go:embed mca-projen-jsii-example-1.1.4.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
 // The implementation is idempotent (and hence safe to be called over and over).
 func Initialize() {
 	// Load this library into the kernel
-	_jsii_.Load("mca-projen-jsii-example", "0.0.0", tarball)
+	_jsii_.Load("mca-projen-jsii-example", "1.1.4", tarball)
 }
