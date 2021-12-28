@@ -35,19 +35,19 @@ const project = new cdk.JsiiProject({
     test:, and others.
   */
   majorVersion: 1,
-  // release to NPM
   release: true,
-  // release to PyPi
   publishToPypi: {
     distName: 'mca-projen-jsii-example',
     module: 'mca_projen_jsii_example',
   },
-  // release to Maven
   publishToMaven: {
     javaPackage: 'com.marciocadev.projen.jsii.example',
     mavenArtifactId: 'mca-projen-jsii-example',
     mavenGroupId: 'com.marciocadev',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
+  publishToGo: {
+    moduleName: 'marcio.com/mca-projen-jsii-example',
   },
   // don't update snapshot when run jest
   antitamper: false,

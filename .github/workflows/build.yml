@@ -49,6 +49,7 @@ jobs:
       - package-js
       - package-java
       - package-python
+      - package-go
     runs-on: ubuntu-latest
     permissions:
       checks: write
@@ -143,3 +144,29 @@ jobs:
           "JSON.parse(fs.readFileSync('.jsii')).jsiiVersion.split(' ')[0]")
 
           npx jsii-pacmak@$jsii_version -v --outdir $PWD/dist --target python
+  package-go:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - uses: actions/setup-go@v2
+        with:
+          go-version: ^1.16.0
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifact
+          path: dist
+      - name: Extract npm tarball
+        run: |-
+          tar -xzf dist/js/*.tgz --strip-components=1
+          rm -fr dist/js
+      - name: Create go artifact
+        run: >-
+          jsii_version=$(node -p
+          "JSON.parse(fs.readFileSync('.jsii')).jsiiVersion.split(' ')[0]")
+
+          npx jsii-pacmak@$jsii_version -v --outdir $PWD/dist --target go
