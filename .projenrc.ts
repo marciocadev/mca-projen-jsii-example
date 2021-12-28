@@ -7,7 +7,8 @@ const project = new cdk.JsiiProject({
   projenrcTs: true,
   repositoryUrl: "https://github.com/marciocadev/mca-projen-jsii-example.git",
 
-  antitamper: false,
+  // Major version number
+  majorVersion: 0,
   // release to NPM
   release: true,
   // release to PyPi
@@ -22,14 +23,16 @@ const project = new cdk.JsiiProject({
     mavenGroupId: 'com.marciocadev',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
+  // dont generate new snapshot when run jest
+  antitamper: false,
+  // generate docs
+  docgen: true,
+  eslint: true,
   tsconfig: {
     compilerOptions: {
       lib: ['dom', 'es2019'],
     },
   },
-  docgen: true,
-  eslint: true,
-  majorVersion: 0,
 });
 
 project.addDevDeps('typedoc');
