@@ -13,7 +13,9 @@ const project = new cdk.JsiiProject({
      ou feel comfortable you need to bump the version manually 
      to 1.0.0 and then the well-known versioning kicks in where 
      breaking changes bump the major version, features bump the 
-     minor and fixes bump the patch version. */
+     minor and fixes bump the patch version. 
+     https://github.com/projen/projen/issues/982
+  */
   majorVersion: 1,
   // release to NPM
   release: true,
