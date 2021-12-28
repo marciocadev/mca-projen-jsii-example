@@ -47,7 +47,8 @@ const project = new cdk.JsiiProject({
     mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
   publishToGo: {
-    moduleName: 'marcio.com/mca-projen-jsii-example',
+    moduleName: 'marciocadev/mca-projen-jsii-example',
+
   },
   // don't update snapshot when run jest
   antitamper: false,

@@ -120,7 +120,7 @@
         "module": "mca_projen_jsii_example"
       },
       "go": {
-        "moduleName": "marcio.com/mca-projen-jsii-example"
+        "moduleName": "marciocadev/mca-projen-jsii-example"
       }
     },
     "tsc": {
