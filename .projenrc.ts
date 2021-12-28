@@ -36,6 +36,7 @@ const project = new cdk.JsiiProject({
   */
   majorVersion: 1,
   release: true,
+  
   publishToPypi: {
     distName: 'mca-projen-jsii-example',
     module: 'mca_projen_jsii_example',
