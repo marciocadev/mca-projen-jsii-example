@@ -8,8 +8,8 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/marciocadev/mca-projen-jsii-example-go.svg)](https://pkg.go.dev/github.com/marciocadev/mca-projen-jsii-example-go)
 [![release](https://github.com/marciocadev/mca-projen-jsii-example/actions/workflows/release.yml/badge.svg)](https://github.com/marciocadev/mca-projen-jsii-example/actions/workflows/release.yml)
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.marciocadev/mca-projen-jsii-example.svg?label=maven%20central)](https://search.maven.org/search?q=g:%22com.marciocadev%22%20AND%20a:%22mca-projen-jsii-example%22)
+<!-- [![Maven Central](https://img.shields.io/maven-central/v/com.marciocadev/mca-projen-jsii-example.svg?label=maven%20central)](https://search.maven.org/search?q=g:%22com.marciocadev%22%20AND%20a:%22mca-projen-jsii-example%22)
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/projen/projen-go.svg)](https://pkg.go.dev/github.com/projen/projen-go/projen)
+[![Go Reference](https://pkg.go.dev/badge/github.com/projen/projen-go.svg)](https://pkg.go.dev/github.com/projen/projen-go/projen) -->
 
 The **MCA Projen JSii Example** it's a test project to learn how deploy at NPM, PyPi and Maven repositories, auto-versioning and runing git actions on commits

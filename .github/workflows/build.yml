@@ -49,6 +49,7 @@ jobs:
       - package-js
       - package-java
       - package-python
+      - package-dotnet
       - package-go
     runs-on: ubuntu-latest
     permissions:
@@ -144,6 +145,32 @@ jobs:
           "JSON.parse(fs.readFileSync('.jsii')).jsiiVersion.split(' ')[0]")
 
           npx jsii-pacmak@$jsii_version -v --outdir $PWD/dist --target python
+  package-dotnet:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.x
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifact
+          path: dist
+      - name: Extract npm tarball
+        run: |-
+          tar -xzf dist/js/*.tgz --strip-components=1
+          rm -fr dist/js
+      - name: Create dotnet artifact
+        run: >-
+          jsii_version=$(node -p
+          "JSON.parse(fs.readFileSync('.jsii')).jsiiVersion.split(' ')[0]")
+
+          npx jsii-pacmak@$jsii_version -v --outdir $PWD/dist --target dotnet
   package-go:
     needs: build
     runs-on: ubuntu-latest

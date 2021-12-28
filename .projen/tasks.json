@@ -151,7 +151,22 @@
           "spawn": "package:python"
         },
         {
+          "spawn": "package:dotnet"
+        },
+        {
           "spawn": "package:go"
+        }
+      ]
+    },
+    "package:dotnet": {
+      "name": "package:dotnet",
+      "description": "Create dotnet language bindings",
+      "steps": [
+        {
+          "exec": "jsii_version=$(node -p \"JSON.parse(fs.readFileSync('.jsii')).jsiiVersion.split(' ')[0]\")"
+        },
+        {
+          "exec": "npx jsii-pacmak@$jsii_version -v --outdir $PWD/dist --target dotnet"
         }
       ]
     },
