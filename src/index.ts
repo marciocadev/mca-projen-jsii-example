@@ -1,5 +1,13 @@
+/**
+ * My Hello class
+ */
 export class Hello {
-  public sayHello() {
-    return 'hello, world!';
+  /**
+   * My sayHello function
+   * @param name Someone who calls
+   * @returns Greetings
+   */
+  public sayHello(name: string) {
+    return 'hello, ' + name + '!';
   }
 }

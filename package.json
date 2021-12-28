@@ -12,10 +12,13 @@
     "compile": "npx projen compile",
     "default": "npx projen default",
     "docgen": "npx projen docgen",
+    "docgen:ts": "npx projen docgen:ts",
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
+    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
@@ -53,6 +56,7 @@
     "standard-version": "^9",
     "ts-jest": "^27.1.2",
     "ts-node": "^9",
+    "typedoc": "*",
     "typescript": "^4.5.4"
   },
   "bundledDependencies": [],
@@ -102,7 +106,19 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "java": {
+        "package": "com.marciocadev.projen.jsii.example",
+        "maven": {
+          "groupId": "com.marciocadev",
+          "artifactId": "mca-projen-jsii-example"
+        }
+      },
+      "python": {
+        "distName": "mca-projen-jsii-example",
+        "module": "mca_projen_jsii_example"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"

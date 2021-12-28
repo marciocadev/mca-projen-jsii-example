@@ -7,10 +7,34 @@ const project = new cdk.JsiiProject({
   projenrcTs: true,
   repositoryUrl: "https://github.com/marciocadev/mca-projen-jsii-example.git",
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
-  // release: undefined,      /* Add release management to this project. */
+  antitamper: false,
+  // release to NPM
+  release: true,
+  // release to PyPi
+  publishToPypi: {
+    distName: 'mca-projen-jsii-example',
+    module: 'mca_projen_jsii_example',
+  },
+  // release to Maven
+  publishToMaven: {
+    javaPackage: 'com.marciocadev.projen.jsii.example',
+    mavenArtifactId: 'mca-projen-jsii-example',
+    mavenGroupId: 'com.marciocadev',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
+  tsconfig: {
+    compilerOptions: {
+      lib: ['dom', 'es2019'],
+    },
+  },
+  docgen: true,
+  eslint: true,
+  majorVersion: 0,
 });
+
+project.addDevDeps('typedoc');
+project.addTask('docgen:ts', {
+  exec: 'typedoc src --disableSources --out docs/',
+});
+
 project.synth();
