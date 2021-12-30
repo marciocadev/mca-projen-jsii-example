@@ -12,7 +12,7 @@
     "compile": "npx projen compile",
     "default": "npx projen default",
     "docgen": "npx projen docgen",
-    "docgen:ts": "npx projen docgen:ts",
+    "docgen:html": "npx projen docgen:html",
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",

@@ -108,8 +108,8 @@
         }
       ]
     },
-    "docgen:ts": {
-      "name": "docgen:ts",
+    "docgen:html": {
+      "name": "docgen:html",
       "steps": [
         {
           "exec": "typedoc src --disableSources --out docs/"

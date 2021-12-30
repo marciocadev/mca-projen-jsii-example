@@ -65,7 +65,7 @@ const project = new cdk.JsiiProject({
 });
 
 project.addDevDeps('typedoc');
-project.addTask('docgen:ts', {
+project.addTask('docgen:html', {
   exec: 'typedoc src --disableSources --out docs/',
 });
 
