@@ -6,7 +6,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/mca-projen-jsii-example?label=pypi%20package&color=brightgreen)](https://badge.fury.io/py/mca-projen-jsii-example)
 [![NuGet version](https://img.shields.io/nuget/v/Projen.Jsii?label=nuget%20package&color=brightgreen)](https://badge.fury.io/nu/Projen.Jsii)
 [![Maven Central](https://img.shields.io/maven-central/v/com.marciocadev/mca-projen-jsii-example.svg?label=maven%20central&color=brightgreen)](https://search.maven.org/search?q=g:%22com.marciocadev%22%20AND%20a:%22mca-projen-jsii-example%22)
-[![Go Reference](https://pkg.go.dev/badge/github.com/marciocadev/mca-projen-jsii-example-go.svg)](https://pkg.go.dev/github.com/marciocadev/mca-projen-jsii-example-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/marciocadev/mca-projen-jsii-example-go/mcaprojenjsiiexample.svg)](https://pkg.go.dev/github.com/marciocadev/mca-projen-jsii-example-go/mcaprojenjsiiexample)
 [![release](https://github.com/marciocadev/mca-projen-jsii-example/actions/workflows/release.yml/badge.svg)](https://github.com/marciocadev/mca-projen-jsii-example/actions/workflows/release.yml)
 
 
