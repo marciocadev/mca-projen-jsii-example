@@ -37,6 +37,8 @@ const project = new cdk.JsiiProject({
   majorVersion: 1,
   release: true,
 
+  codeCov: true,
+
   publishToPypi: {
     distName: 'mca-projen-jsii-example',
     module: 'mca_projen_jsii_example',
@@ -64,6 +66,8 @@ const project = new cdk.JsiiProject({
     },
   },
 });
+
+project.addTask('coverage', {});
 
 project.addDevDeps('typedoc');
 project.addTask('docgen:html', {

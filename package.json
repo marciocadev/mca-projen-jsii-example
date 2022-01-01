@@ -10,6 +10,7 @@
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "npx projen compile",
+    "coverage": "npx projen coverage",
     "default": "npx projen default",
     "docgen": "npx projen docgen",
     "docgen:html": "npx projen docgen:html",

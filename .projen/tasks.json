@@ -90,6 +90,9 @@
         }
       ]
     },
+    "coverage": {
+      "name": "coverage"
+    },
     "default": {
       "name": "default",
       "description": "Synthesize project files",
