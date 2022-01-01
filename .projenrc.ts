@@ -54,6 +54,7 @@ const project = new cdk.JsiiProject({
     dotNetNamespace: 'Marciocadev.Examples',
     packageId: 'Projen.Jsii',
   },
+  publishTasks: true,
   // generate docs
   docgen: true,
   eslint: true,
