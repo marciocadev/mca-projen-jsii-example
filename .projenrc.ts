@@ -38,6 +38,7 @@ const project = new cdk.JsiiProject({
   release: true,
 
   codeCov: true,
+  gitpod: true,
 
   publishToPypi: {
     distName: 'mca-projen-jsii-example',

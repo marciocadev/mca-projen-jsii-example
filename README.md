@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/marciocadev/mca-projen-jsii-example)
+[![codecov](https://codecov.io/gh/marciocadev/mca-projen-jsii-example/branch/main/graph/badge.svg?token=U1R3MKJWJO)](https://codecov.io/gh/marciocadev/mca-projen-jsii-example)
 [![NPM version](https://img.shields.io/npm/v/mca-projen-jsii-example?label=pypi%20package&color=brightgreen)](https://badge.fury.io/js/mca-projen-jsii-example)
 [![PyPI version](https://img.shields.io/pypi/v/mca-projen-jsii-example?label=pypi%20package&color=brightgreen)](https://badge.fury.io/py/mca-projen-jsii-example)
 [![NuGet version](https://img.shields.io/nuget/v/Projen.Jsii?label=nuget%20package&color=brightgreen)](https://badge.fury.io/nu/Projen.Jsii)
