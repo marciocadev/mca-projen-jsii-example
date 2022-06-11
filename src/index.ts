@@ -10,4 +10,13 @@ export class Hello {
   public sayHello(name: string) {
     return 'hello, ' + name + '!';
   }
+
+  /**
+   * My sayGodbye function
+   * @param name Someone who calls
+   * @returns Godbye
+   */
+  public sayGodbye(name: string) {
+    return 'godbye, ' + name + '!';
+  }
 }
