@@ -25,7 +25,22 @@ new Hello()
 
 | **Name** | **Description** |
 | --- | --- |
+| [`sayGodbye`](#mcaprojenjsiiexamplehellosaygodbye) | My sayGodbye function. |
 | [`sayHello`](#mcaprojenjsiiexamplehellosayhello) | My sayHello function. |
+
+---
+
+##### `sayGodbye` <a name="mca-projen-jsii-example.Hello.sayGodbye" id="mcaprojenjsiiexamplehellosaygodbye"></a>
+
+```typescript
+public sayGodbye(name: string)
+```
+
+###### `name`<sup>Required</sup> <a name="mca-projen-jsii-example.Hello.parameter.name" id="mcaprojenjsiiexamplehelloparametername"></a>
+
+- *Type:* `string`
+
+Someone who calls.
 
 ---
 
